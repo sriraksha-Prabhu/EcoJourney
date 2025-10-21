@@ -1,0 +1,41 @@
+
+### Health
+GET http://localhost:5000/
+
+### Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com",
+  "password": "secret123"
+}
+
+### Login (copy token from response)
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "password": "secret123"
+}
+
+### Add Journey (replace TOKEN below)
+POST http://localhost:5000/api/journeys
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGZkYmU1MWQ0YzI5OGVmYWQwY2Y3ZCIsImlhdCI6MTc1OTUwMTI4NiwiZXhwIjoxNzYwMTA2MDg2fQ.AOD3D3cr1-GkJxcuGXHpIC1Jv0I_0F_1n6d6-f-fLqY
+Content-Type: application/json
+
+{
+  "mode": "Car",
+  "distanceKm": 12.3,
+  "note": "Grocery run"
+}
+
+### List Journeys
+GET http://localhost:5000/api/journeys
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGZkYmU1MWQ0YzI5OGVmYWQwY2Y3ZCIsImlhdCI6MTc1OTUwMTI4NiwiZXhwIjoxNzYwMTA2MDg2fQ.AOD3D3cr1-GkJxcuGXHpIC1Jv0I_0F_1n6d6-f-fLqY
+
+### Summary
+GET http://localhost:5000/api/journeys/summary
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGZkYmU1MWQ0YzI5OGVmYWQwY2Y3ZCIsImlhdCI6MTc1OTUwMTI4NiwiZXhwIjoxNzYwMTA2MDg2fQ.AOD3D3cr1-GkJxcuGXHpIC1Jv0I_0F_1n6d6-f-fLqY

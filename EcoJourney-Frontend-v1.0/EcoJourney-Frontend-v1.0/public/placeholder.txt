@@ -1,0 +1,1 @@
+This folder is for assets. To add the Dashboard background, place a file at public/assets/dashboard-bg.jpg
