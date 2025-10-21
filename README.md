@@ -1,6 +1,6 @@
 # EcoJourney 🌿
 
-EcoJourney is a full-stack MERN application designed to help users track their journeys and calculate their carbon footprint. The app allows users to log in, record trips, view journey history, and monitor their environmental impact over time.
+EcoJourney is a full-stack MERN application designed to help users track their journeys and calculate their carbon footprint. It allows users to log in, record trips, view journey history, and monitor their environmental impact over time.
 
 ---
 ## Features
