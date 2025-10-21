@@ -16,4 +16,4 @@ EcoJourney is a full-stack MERN application designed to help users track their j
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB (local setup)
 - **Authentication:** JWT (JSON Web Token)
-- **Other Tools:** Git, Postman, VS Code
+- **Other Tools:** Git, VS Code
